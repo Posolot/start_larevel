@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+    @include('includes.styles')
 </head>
 <body>
     @include('includes.header')
+
     <div class="content">
         @yield('content')
     </div>
+
     @include('includes.footer')
 </body>
 </html>
